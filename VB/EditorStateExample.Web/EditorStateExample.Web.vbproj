@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{918A9C52-C04A-42CE-9DA5-1D4BD592C5F6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace></RootNamespace>
+    <AssemblyName>EditorStateExample.Web</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DefineConstants>EASYTEST=True</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ConditionalEditorState.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ConditionalEditorState.Web.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Images.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Objects.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Web.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxEditors.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGridView.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v10.2.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.XML">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.asp" />
+    <Content Include="Default.aspx" />
+    <Content Include="Dialog.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\ButtonBkg.gif" />
+    <Content Include="Images\ExpressAppLogo.png" />
+    <Content Include="Images\FooterBkg.gif" />
+    <Content Include="Images\GridHeaderBkg.gif" />
+    <Content Include="Images\HeaderBkg.gif" />
+    <Content Include="Images\LayoutHeaderBkg.gif" />
+    <Content Include="Images\Progress.gif" />
+    <Content Include="Images\SelectedCenter.gif" />
+    <Content Include="Images\SelectedCenterWhite.gif" />
+    <Content Include="Images\SelectedLeft.gif" />
+    <Content Include="Images\SelectedLeftWhite.gif" />
+    <Content Include="Images\SelectedRight.gif" />
+    <Content Include="Images\SelectedRightWhite.gif" />
+    <Content Include="Images\SideBarRDCorner.gif" />
+    <Content Include="Images\SideBarRUCorner.gif" />
+    <Content Include="Images\TabContentBkg.gif" />
+    <Content Include="Images\UnSelectedCenter.gif" />
+    <Content Include="Images\UnSelectedLeft.gif" />
+    <Content Include="Images\UnSelectedRight.gif" />
+    <Content Include="Login.aspx" />
+    <Content Include="MoveFooter.js" />
+    <Content Include="NestedFrameControl.ascx" />
+    <Content Include="SessionKeepAliveReconnect.aspx" />
+    <Content Include="TemplateStyle.css" />
+    <Content Include="Web.config" />
+    <Content Include="XAFControlsStyle.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultVertical.aspx.vb">
+      <DependentUpon>DefaultVertical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultVertical.aspx.designer.vb">
+      <DependentUpon>DefaultVertical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog.aspx.designer.vb">
+      <DependentUpon>Dialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.designer.vb">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NestedFrameControl.ascx.designer.vb">
+      <DependentUpon>NestedFrameControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationCode\WebApplication.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dialog.aspx.vb">
+      <DependentUpon>Dialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.vb">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NestedFrameControl.ascx.vb">
+      <DependentUpon>NestedFrameControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="SessionKeepAliveReconnect.aspx.vb">
+      <DependentUpon>SessionKeepAliveReconnect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SessionKeepAliveReconnect.aspx.designer.vb">
+      <DependentUpon>SessionKeepAliveReconnect.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ApplicationCode\WebApplication.resx">
+      <DependentUpon>WebApplication.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model.xafml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup></ItemGroup>
+  <ItemGroup>
+    <Content Include="DefaultVertical.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Aqua\Editors\edtButtonBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtButtonBackDis.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtButtonCheckedBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtButtonHoverBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtButtonPressedBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtCalendarButtonHoverBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtCalendarButtonPressedBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtCalendarFooterBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtCalendarHeaderBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtDropDownBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtDropDownBackDis.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtDropDownButtonHoverBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtDropDownButtonPressedBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtProgressBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtProgressIndicatorBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtSpinDecBtnBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtSpinDecButtonHoverBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtSpinDecButtonPressedBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtSpinIncBtnBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtSpinIncButtonHoverBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtSpinIncButtonPressedBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\lbHeaderBackground.gif" />
+    <Content Include="App_Themes\Aqua\Editors\Loading.gif" />
+    <Content Include="App_Themes\Aqua\Editors\sprite.css" />
+    <Content Include="App_Themes\Aqua\Editors\sprite.gif" />
+    <Content Include="App_Themes\Aqua\Editors\sprite.png" />
+    <Content Include="App_Themes\Aqua\Editors\styles.css" />
+    <Content Include="App_Themes\Aqua\GridView\gvGroupPanelBackground.gif" />
+    <Content Include="App_Themes\Aqua\GridView\gvHeaderBackground.gif" />
+    <Content Include="App_Themes\Aqua\GridView\gvLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\Aqua\GridView\gvPagerBottomPanelBackground.gif" />
+    <Content Include="App_Themes\Aqua\GridView\Loading.gif" />
+    <Content Include="App_Themes\Aqua\GridView\sprite.css" />
+    <Content Include="App_Themes\Aqua\GridView\sprite.gif" />
+    <Content Include="App_Themes\Aqua\GridView\sprite.png" />
+    <Content Include="App_Themes\Aqua\GridView\styles.css" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\Loading.gif" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\RoundPanel\herpBottomEdge.gif" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\RoundPanel\herpHeaderBackground.gif" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\RoundPanel\herpHeaderLeftEdge.gif" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\RoundPanel\herpHeaderRightEdge.gif" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\RoundPanel\herpLeftEdge.gif" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\RoundPanel\herpNoHeaderTopEdge.gif" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\RoundPanel\herpRightEdge.gif" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\RoundPanel\herpTopEdge.gif" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\sprite.css" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\sprite.gif" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\sprite.png" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\styles.css" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\tbBack.gif" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\tbItemBack.gif" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\tbItemHBack.gif" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\tbItemSBack.gif" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\tbSeparator.gif" />
+    <Content Include="App_Themes\Aqua\PivotGrid\Loading.gif" />
+    <Content Include="App_Themes\Aqua\PivotGrid\pcHeaderBack.gif" />
+    <Content Include="App_Themes\Aqua\PivotGrid\pgColumnFieldBack.gif" />
+    <Content Include="App_Themes\Aqua\PivotGrid\pgHeaderBack.gif" />
+    <Content Include="App_Themes\Aqua\PivotGrid\pgHeaderHoverBack.gif" />
+    <Content Include="App_Themes\Aqua\PivotGrid\pgPagerBack.gif" />
+    <Content Include="App_Themes\Aqua\PivotGrid\sprite.css" />
+    <Content Include="App_Themes\Aqua\PivotGrid\sprite.gif" />
+    <Content Include="App_Themes\Aqua\PivotGrid\sprite.png" />
+    <Content Include="App_Themes\Aqua\PivotGrid\styles.css" />
+    <Content Include="App_Themes\Aqua\Scheduler\CssImages\ltcorner.gif" />
+    <Content Include="App_Themes\Aqua\Scheduler\CssImages\resHeader.gif" />
+    <Content Include="App_Themes\Aqua\Scheduler\CssImages\ToolbarBack.gif" />
+    <Content Include="App_Themes\Aqua\Scheduler\CssImages\vnBtnBack.gif" />
+    <Content Include="App_Themes\Aqua\Scheduler\CssImages\vnBtnBackH.gif" />
+    <Content Include="App_Themes\Aqua\Scheduler\CssImages\vnBtnBackP.gif" />
+    <Content Include="App_Themes\Aqua\Scheduler\Loading.gif" />
+    <Content Include="App_Themes\Aqua\Scheduler\sprite.css" />
+    <Content Include="App_Themes\Aqua\Scheduler\sprite.gif" />
+    <Content Include="App_Themes\Aqua\Scheduler\sprite.png" />
+    <Content Include="App_Themes\Aqua\Scheduler\styles.css" />
+    <Content Include="App_Themes\Aqua\SpellChecker\Loading.gif" />
+    <Content Include="App_Themes\Aqua\SpellChecker\scErrorUnderline.gif" />
+    <Content Include="App_Themes\Aqua\SpellChecker\styles.css" />
+    <Content Include="App_Themes\Aqua\TreeList\CssImages\HeaderBack.gif" />
+    <Content Include="App_Themes\Aqua\TreeList\CssImages\TreeLineFirst.gif" />
+    <Content Include="App_Themes\Aqua\TreeList\CssImages\TreeLineLast.gif" />
+    <Content Include="App_Themes\Aqua\TreeList\CssImages\TreeLineMiddle.gif" />
+    <Content Include="App_Themes\Aqua\TreeList\CssImages\TreeLineRoot.gif" />
+    <Content Include="App_Themes\Aqua\TreeList\Loading.gif" />
+    <Content Include="App_Themes\Aqua\TreeList\sprite.css" />
+    <Content Include="App_Themes\Aqua\TreeList\sprite.gif" />
+    <Content Include="App_Themes\Aqua\TreeList\sprite.png" />
+    <Content Include="App_Themes\Aqua\TreeList\styles.css" />
+    <Content Include="App_Themes\Aqua\Web\dxpcFooterBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\Loading.gif" />
+    <Content Include="App_Themes\Aqua\Web\mBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\mGutterRightBorder.gif" />
+    <Content Include="App_Themes\Aqua\Web\mItemBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\mItemHBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\mItemSBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\mSeparator.gif" />
+    <Content Include="App_Themes\Aqua\Web\mVertBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\mVertHBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\mVerticalSeparator.gif" />
+    <Content Include="App_Themes\Aqua\Web\mVertSBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\nbGroupHeaderBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\nbLoading.gif" />
+    <Content Include="App_Themes\Aqua\Web\pcHeaderBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\rcMapImage.png" />
+    <Content Include="App_Themes\Aqua\Web\rpBottomEdge.gif" />
+    <Content Include="App_Themes\Aqua\Web\rpHeaderBackground.gif" />
+    <Content Include="App_Themes\Aqua\Web\rpLeftEdge.gif" />
+    <Content Include="App_Themes\Aqua\Web\rpNoHeaderTopEdge.gif" />
+    <Content Include="App_Themes\Aqua\Web\splHSeparatorBackground.png" />
+    <Content Include="App_Themes\Aqua\Web\splHSeparatorBackgroundHover.png" />
+    <Content Include="App_Themes\Aqua\Web\splResizingPointer.gif" />
+    <Content Include="App_Themes\Aqua\Web\splVSeparatorBackground.png" />
+    <Content Include="App_Themes\Aqua\Web\splVSeparatorBackgroundHover.png" />
+    <Content Include="App_Themes\Aqua\Web\sprite.css" />
+    <Content Include="App_Themes\Aqua\Web\sprite.gif" />
+    <Content Include="App_Themes\Aqua\Web\sprite.png" />
+    <Content Include="App_Themes\Aqua\Web\styles.css" />
+    <Content Include="App_Themes\Aqua\Web\tcTabBottomBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\tcTabBottomHottrackedBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\tcTabLeftBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\tcTabLeftHottrackedBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\tcTabRightBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\tcTabRightHottrackedBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\tcTabTopBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\tcTabTopHottrackedBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\ucProgressBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\ucProgressIndicatorBack.gif" />
+    <Content Include="App_Themes\Aqua\Xaf\1x1.gif" />
+    <Content Include="App_Themes\Aqua\Xaf\background.jpg" />
+    <Content Include="App_Themes\Aqua\Xaf\BackgroundRepeat.gif" />
+    <Content Include="App_Themes\Aqua\Xaf\CornerBL.png" />
+    <Content Include="App_Themes\Aqua\Xaf\CornerBLW.png" />
+    <Content Include="App_Themes\Aqua\Xaf\CornerBR.png" />
+    <Content Include="App_Themes\Aqua\Xaf\CornerBRW.png" />
+    <Content Include="App_Themes\Aqua\Xaf\CornerTL.png" />
+    <Content Include="App_Themes\Aqua\Xaf\CornerTR.png" />
+    <Content Include="App_Themes\Aqua\Xaf\DarkBottomLeftCorner.png" />
+    <Content Include="App_Themes\Aqua\Xaf\DarkBottomRightCorner.png" />
+    <Content Include="App_Themes\Aqua\Xaf\DarkTopLeftCorner.png" />
+    <Content Include="App_Themes\Aqua\Xaf\DarkTopRightCorner.png" />
+    <Content Include="App_Themes\Aqua\Xaf\DialogBackImage.jpg" />
+    <Content Include="App_Themes\Aqua\Xaf\DialogBackRepeat.gif" />
+    <Content Include="App_Themes\Aqua\Xaf\dropDownArrow.gif" />
+    <Content Include="App_Themes\Aqua\Xaf\dropDownArrowDisabled.gif" />
+    <Content Include="App_Themes\Aqua\Xaf\edtButtonBack.gif" />
+    <Content Include="App_Themes\Aqua\Xaf\GripLeft.gif" />
+    <Content Include="App_Themes\Aqua\Xaf\GripRight.gif" />
+    <Content Include="App_Themes\Aqua\Xaf\HeaderLeft.png" />
+    <Content Include="App_Themes\Aqua\Xaf\HeaderRight.png" />
+    <Content Include="App_Themes\Aqua\Xaf\LayoutTabSelectedLeft.png" />
+    <Content Include="App_Themes\Aqua\Xaf\LayoutTabSelectedMiddle.gif" />
+    <Content Include="App_Themes\Aqua\Xaf\LayoutTabSelectedRight.png" />
+    <Content Include="App_Themes\Aqua\Xaf\Logo.gif" />
+    <Content Include="App_Themes\Aqua\Xaf\Logo.png" />
+    <Content Include="App_Themes\Aqua\Xaf\LogoSmall.png" />
+    <Content Include="App_Themes\Aqua\Xaf\MainHeaderBG.gif" />
+    <Content Include="App_Themes\Aqua\Xaf\NavtabSelectedLeft.png" />
+    <Content Include="App_Themes\Aqua\Xaf\NavtabSelectedMiddle.gif" />
+    <Content Include="App_Themes\Aqua\Xaf\NavtabSelectedRight.png" />
+    <Content Include="App_Themes\Aqua\Xaf\styles_xaf.css" />
+    <Content Include="App_Themes\Aqua\Xaf\template.css" />
+    <Content Include="App_Themes\Aqua\XtraReports\sprite.css" />
+    <Content Include="App_Themes\Aqua\XtraReports\sprite.gif" />
+    <Content Include="App_Themes\Aqua\XtraReports\sprite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EditorStateExample.Module\EditorStateExample.Module.vbproj">
+      <Project>{E18E3347-BBB6-4CA4-8356-B4F0D07295DB}</Project>
+      <Name>EditorStateExample.Module</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Aqua\ASPxButton.skin" />
+    <Content Include="App_Themes\Aqua\ASPxButtonEdit.skin" />
+    <Content Include="App_Themes\Aqua\ASPxCalendar.skin" />
+    <Content Include="App_Themes\Aqua\ASPxCallbackPanel.skin" />
+    <Content Include="App_Themes\Aqua\ASPxCaptcha.skin" />
+    <Content Include="App_Themes\Aqua\ASPxCheckBox.skin" />
+    <Content Include="App_Themes\Aqua\ASPxCloudControl.skin" />
+    <Content Include="App_Themes\Aqua\ASPxColorEdit.skin" />
+    <Content Include="App_Themes\Aqua\ASPxComboBox.skin" />
+    <Content Include="App_Themes\Aqua\ASPxDataView.skin" />
+    <Content Include="App_Themes\Aqua\ASPxDateEdit.skin" />
+    <Content Include="App_Themes\Aqua\ASPxDateNavigator.skin" />
+    <Content Include="App_Themes\Aqua\ASPxDropDownEdit.skin" />
+    <Content Include="App_Themes\Aqua\ASPxFilterControl.skin" />
+    <Content Include="App_Themes\Aqua\ASPxGridView.skin" />
+    <Content Include="App_Themes\Aqua\ASPxHeadline.skin" />
+    <Content Include="App_Themes\Aqua\ASPxHtmlEditor.skin" />
+    <Content Include="App_Themes\Aqua\ASPxHyperLink.skin" />
+    <Content Include="App_Themes\Aqua\ASPxLabel.skin" />
+    <Content Include="App_Themes\Aqua\ASPxListBox.skin" />
+    <Content Include="App_Themes\Aqua\ASPxLoadingPanel.skin" />
+    <Content Include="App_Themes\Aqua\ASPxMemo.skin" />
+    <Content Include="App_Themes\Aqua\ASPxMenu.skin" />
+    <Content Include="App_Themes\Aqua\ASPxNavBar.skin" />
+    <Content Include="App_Themes\Aqua\ASPxNewsControl.skin" />
+    <Content Include="App_Themes\Aqua\ASPxPageControl.skin" />
+    <Content Include="App_Themes\Aqua\ASPxPager.skin" />
+    <Content Include="App_Themes\Aqua\ASPxPivotGrid.skin" />
+    <Content Include="App_Themes\Aqua\ASPxPopupControl.skin" />
+    <Content Include="App_Themes\Aqua\ASPxPopupMenu.skin" />
+    <Content Include="App_Themes\Aqua\ASPxProgressBar.skin" />
+    <Content Include="App_Themes\Aqua\ASPxRadioButton.skin" />
+    <Content Include="App_Themes\Aqua\ASPxRadioButtonList.skin" />
+    <Content Include="App_Themes\Aqua\ASPxRatingControl.skin" />
+    <Content Include="App_Themes\Aqua\ASPxRoundPanel.skin" />
+    <Content Include="App_Themes\Aqua\ASPxScheduler.skin" />
+    <Content Include="App_Themes\Aqua\ASPxSiteMapControl.skin" />
+    <Content Include="App_Themes\Aqua\ASPxSpellChecker.skin" />
+    <Content Include="App_Themes\Aqua\ASPxSpinEdit.skin" />
+    <Content Include="App_Themes\Aqua\ASPxSplitter.skin" />
+    <Content Include="App_Themes\Aqua\ASPxTabControl.skin" />
+    <Content Include="App_Themes\Aqua\ASPxTextBox.skin" />
+    <Content Include="App_Themes\Aqua\ASPxTimeEdit.skin" />
+    <Content Include="App_Themes\Aqua\ASPxTitleIndex.skin" />
+    <Content Include="App_Themes\Aqua\ASPxTreeList.skin" />
+    <Content Include="App_Themes\Aqua\MonthEdit.skin" />
+    <Content Include="App_Themes\Aqua\ReportToolbar.skin" />
+    <Content Include="App_Themes\Aqua\ReportViewer.skin" />
+    <Content Include="App_Themes\Aqua\WeekDaysEdit.skin" />
+    <Content Include="App_Themes\Aqua\WeekOfMonthEdit.skin" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2064</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl></IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
