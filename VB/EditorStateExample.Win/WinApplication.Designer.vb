@@ -29,7 +29,7 @@
             Me.module5 = New DevExpress.ExpressApp.Validation.ValidationModule()
             Me.module6 = New DevExpress.ExpressApp.Objects.BusinessClassLibraryCustomizationModule()
             Me.module7 = New DevExpress.ExpressApp.Validation.Win.ValidationWindowsFormsModule()
-            DirectCast(Me, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
             ' 
             ' module5
             ' 
@@ -44,7 +44,7 @@
             Me.Modules.Add(Me.module3)
             Me.Modules.Add(Me.module5)
             Me.Modules.Add(Me.module7)
-            DirectCast(Me, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
         End Sub
 

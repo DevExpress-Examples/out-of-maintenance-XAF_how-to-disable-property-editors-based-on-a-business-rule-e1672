@@ -17,7 +17,7 @@ Namespace EditorStateExample.Win
             InitializeComponent()
         End Sub
 
-        Private Sub EditorStateExampleWindowsFormsApplication_DatabaseVersionMismatch(ByVal sender As Object, ByVal e As DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs) Handles MyBase.DatabaseVersionMismatch
+        Private Sub EditorStateExampleWindowsFormsApplication_DatabaseVersionMismatch(ByVal sender As Object, ByVal e As DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs) Handles Me.DatabaseVersionMismatch
             e.Updater.Update()
 
             e.Handled = True
