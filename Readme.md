@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Contact.cs](./CS/EditorStateExample.Module/Contact.cs) (VB: [Contact.vb](./VB/EditorStateExample.Module/Contact.vb))
+<!-- default file list end -->
 # How to: Disable Property Editors Based on a Business Rule
 
 
