@@ -5,7 +5,7 @@
 <!-- default file list end -->
 # How to: Disable Property Editors Based on a Business Rule
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e1672)**
+**[[Run Online]](https://codecentral.devexpress.com/e1672/)**
 <!-- run online end -->
 
 
